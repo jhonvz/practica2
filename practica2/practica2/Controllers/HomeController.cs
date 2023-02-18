@@ -57,9 +57,9 @@ namespace practica2.Controllers
             Listjugadores.Add(new Jugador() { nombre = "Ashe", apellido = "Cifuentes", equipo = "Mad lions", rol = "TOP", kda = 8.00, cs = 80 });
         }
 
-        public IActionResult Index()
+        public List<Jugador> Index()
         {
-            return View();
+            return Listjugadores;
         }
 
         public IActionResult Privacy()
